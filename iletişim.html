@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>İletişim</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"><!--tarayacının en son sürümünü kullanmasını sağlar-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--mobil için uyumlu-->
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  
+  <!-- CSS link bağlantısı -->
+</head>
+<body>
+
+  <!-- Menü kısmı -->
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-fixed-top" style="background-image: url(görseller/josh.gif);">
+    <div class="container">
+      <a class="navbar-brand" style="font-size: x-large;" href="./anasayfa.html">Furkan Bağcı</a>
+      <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu" aria-controls="navmenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+          
+      <div class="collapse navbar-collapse" id="navmenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="navbar-item">
+            <a class="nav-link" aria-current="anasayfa" href="anasayfa.html">Ana Sayfa</a>
+          </li>
+          <li class="navbar-item">
+            <a class="nav-link" href="./eğitim.html">Eğitim</a>
+          </li>
+          <li class="navbar-item">
+            <a class="nav-link" href="./şehrim.html">Şehrim</a>
+          </li>
+          <li class="navbar-item">
+            <a class="nav-link" href="./miras.html">Miras</a>
+          </li>
+          <li class="navbar-item">
+            <a class="nav-link" href="./hobilerim.html">Hobilerim</a>
+          </li>
+          <li class="navbar-item">
+            <a class="nav-link" href="./giriş.html">Giriş</a>
+          </li>
+          <li class="navbar-item">
+            <a class="nav-link" href="./iletişim.html">İletişim</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--başlık-->
+  <header class="text-light pt-4 pb-4" style="background-color: #353535;">
+    <div class="container">
+      <h1 style="font-size: 50px;">İletişim</h1>
+    </div>
+  </header>
+
+  <!-- İçerik kısmı -->
+  <div class="container col-xs-2 mt-4" style="background-color: #bdbdbd; border-radius: 14px;">
+    <form action="iletişim.php" method="post">
+      <div class="mb-4">
+        <label class="ad" style="font-size: 18px; color: black;">Ad Soyad:</label>
+        <input name="ad" type="text" class="form-control" id="ad" autofocus>
+      </div>
+      <div class="mb-4">
+        <label class="emayıl" style="font-size: 18px; color: black;">E-posta adresiniz:</label>
+        <input name="email" type="email" class="form-control" id="email" >
+      </div>
+      <label class="Mesaj" style="font-size: 18px; color: black;">Mesaj:</label>
+      <div class="mb-4">
+        <textarea name="msaj" id="mesaj" style="width: 100%; height: 300px; bottom: 20px;"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary" style="background-color:rgb(92, 92, 92);">Gönder</button> 
+      <button type="reset" class="btn btn-primary" style="background-color: rgb(93, 93, 93);">Temizle</button>
+    </form>
+
+
+  </div>
+
+
+  <div class="container">
+    <br>
+    <a href="https://github.com/furkannbagci">
+      <img width="50px" height="50px" src="görseller/github.png" alt="">
+    </a>
+    <a href="mailto:furkan.bagci@ogr.sakarya.edu.tr">
+      <img width="50px" height="50px" src="görseller/email.png" alt="">
+    </a>
+    <p> </p>
+  
+  </div>
+  
+<!--taban kısım-->
+<footer class="text-light pt-3 pb-2" style="background-image: url(görseller/josh.gif);">
+  <div class="container text-center">
+    <p> Web Teknolojileri Projesı - Furkan Bağcı 2024</p>
+  </div>
+</footer>
+
+<!--css kısmı-->
+<style>
+  body{
+    background-color: #dbdbdb;
+  }
+</style>
+
+<script src="iletişim.js"></script>
+  
+<!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+</body>
+</html>
