@@ -1,0 +1,15 @@
+body{
+    background-color: #d3d3d3;
+  }
+  table,th,td{
+    border: 2px groove;
+  }
+  .title{
+    background-image: url(görseller/josh.gif);
+    color: #E6E6E6;
+    text-align: center;
+    font-size: larger;
+  }
+  .icerik{
+    text-align: center;
+  }
