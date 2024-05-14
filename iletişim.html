@@ -58,22 +58,23 @@
 
   <!-- İçerik kısmı -->
   <div class="container col-xs-2 mt-4" style="background-color: #bdbdbd; border-radius: 14px;">
-    <form action="iletişim.php" method="post">
+    <form action="iletişim.php" method="post" id="form" onsubmit="return kontrol()"><!--onsubmit submit edilmeden js'yi çalıştırır-->
       <div class="mb-4">
         <label class="ad" style="font-size: 18px; color: black;">Ad Soyad:</label>
         <input name="ad" type="text" class="form-control" id="ad" autofocus>
       </div>
       <div class="mb-4">
-        <label class="emayıl" style="font-size: 18px; color: black;">E-posta adresiniz:</label>
-        <input name="email" type="email" class="form-control" id="email" >
+        <label class="emayıl" style="font-size: 18px; color: black;">E-posta adresiniz:</label><br>
+        <input class="form-control"   id="email" name="email">
       </div>
       <label class="Mesaj" style="font-size: 18px; color: black;">Mesaj:</label>
       <div class="mb-4">
-        <textarea name="msaj" id="mesaj" style="width: 100%; height: 300px; bottom: 20px;"></textarea>
+        <textarea name="mesaj" id="mesaj" style="width: 100%; height: 300px; bottom: 20px;"></textarea>
       </div>
-      <button type="submit" class="btn btn-primary" style="background-color:rgb(92, 92, 92);">Gönder</button> 
-      <button type="reset" class="btn btn-primary" style="background-color: rgb(93, 93, 93);">Temizle</button>
+      <button class="btn btn-primary"  style="background-color:rgb(92, 92, 92);">Gönder</button> 
     </form>
+    <br>
+    <button  class="btn btn-primary" style="background-color: rgb(93, 93, 93);" onclick=temizle() >Temizle</button>
 
 
   </div>
@@ -106,6 +107,7 @@
 </style>
 
 <script src="iletişim.js"></script>
+
   
 <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
